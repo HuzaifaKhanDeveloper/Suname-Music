@@ -3,6 +3,8 @@ import { motion, AnimatePresence, useScroll, useTransform, useMotionValue, useRe
 import { FaSoundcloud, FaInstagram, FaTiktok, FaYoutube, FaSpotify, FaApple } from 'react-icons/fa'; 
 import { FaXTwitter } from 'react-icons/fa6'; 
 import { biography } from '../data/biography';
+import SEOHead from '../components/SEOHead';
+import { artistStructuredData, websiteStructuredData } from '../data/structuredData';
 
 const AudioVisualizer = lazy(() => import('../components/AudioVisualizer'));
 const ParticleSystem = lazy(() => import('../components/ParticleSystem'));
@@ -288,6 +290,16 @@ const HomePage: React.FC<HomePageProps> = React.memo(({ isDarkRealm }) => {
       animate="animate"
       exit="exit"
     >
+      <SEOHead
+        title="SUNAME - Electronic Music Artist & DJ | Tech House, Melodic Techno, Techno"
+        description="Official website of SUNAME - Electronic music artist and DJ from Florida specializing in Tech House, Melodic Techno, and Techno. Experience the SUNAME WAVE movement."
+        keywords="SUNAME, electronic music, DJ, tech house, melodic techno, techno, Florida DJ, electronic dance music, EDM, live sets, music producer, SUNAME WAVE"
+        image="https://sunamemusic.com/images/artist_main.jpg"
+        url="https://sunamemusic.com/"
+        type="profile"
+        structuredData={[artistStructuredData, websiteStructuredData]}
+      />
+      
       <Suspense fallback={null}>
         <ParticleSystem
           isDarkRealm={isDarkRealm}
@@ -640,14 +652,13 @@ const HomePage: React.FC<HomePageProps> = React.memo(({ isDarkRealm }) => {
 
       <footer className="py-8 text-center z-10 relative">
         <motion.p
-          className={`text-base`}
-          style={{ color: isDarkRealm ? '#FFFFFF' : '#1A202C' }}
+          className="text-sm font-bold text-purple-500 dark:text-white"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.8 }}
           transition={prefersReducedMotion ? { duration: 0.4, delay: 0.1 } : { duration: 0.8, ease: [0.2, 0.8, 0.2, 1], delay: 0.2 }}
         >
-          Artwork & Website by{' '}
+          <span className="text-white dark:text-white">Artwork & Website by</span>{' '}
           <motion.a
             href={biography.designer.twitter}
             target="_blank"

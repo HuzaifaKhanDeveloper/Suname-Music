@@ -8,6 +8,8 @@ import { useInView } from 'react-intersection-observer';
 import { IconType } from 'react-icons';
 import { FaSoundcloud, FaInstagram, FaTiktok, FaYoutube, FaSpotify, FaApple } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6'; 
+import SEOHead from '../components/SEOHead';
+import { artistStructuredData } from '../data/structuredData';
 
 type NotificationType = 'success' | 'error';
 
@@ -118,6 +120,16 @@ const ContactPage = () => {
 
   return (
     <>
+      <SEOHead
+        title="Contact SUNAME - Management, Bookings & General Inquiries"
+        description="Get in touch with SUNAME for bookings, management, and general inquiries. Contact information for professional electronic music DJ and producer services."
+        keywords="contact SUNAME, management inquiries, booking contact, electronic music artist contact, DJ contact information"
+        image="https://sunamemusic.com/images/artist_main.jpg"
+        url="https://sunamemusic.com/contact"
+        type="website"
+        structuredData={artistStructuredData}
+      />
+      
       <AnimatePresence>
         {notification && (
           <motion.div
@@ -147,11 +159,9 @@ const ContactPage = () => {
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ type: "spring", stiffness: 200 }}
-            className={`text-4xl md:text-5xl font-bold text-center mb-8 ${
-              isDarkMode ? 'text-white' : 'text-gray-900'
-            }`}
+            className="text-4xl md:text-5xl font-bold text-center mb-8 text-purple-500 dark:text-white"
           >
-            Contact SUNAME
+            <span className="text-white dark:text-white">Contact SUNAME</span>
           </motion.h1>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Contact Information Section */}
@@ -418,8 +428,8 @@ const ContactPage = () => {
             transition={{ delay: 0.8 }}
             className="text-center mt-12"
           >
-            <p className="text-sm font-bold text-white">
-              Artwork & Website by{' '}
+            <p className="text-sm font-bold text-purple-500 dark:text-white">
+              <span className="text-white dark:text-white">Artwork & Website by</span>{' '}
               <a
                 href={biography.designer.twitter}
                 target="_blank"

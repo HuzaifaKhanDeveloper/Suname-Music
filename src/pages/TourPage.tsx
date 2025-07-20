@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { Calendar } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { biography } from '../data/biography';
+import SEOHead from '../components/SEOHead';
+import { musicEventStructuredData } from '../data/structuredData';
 
 const TourPage = () => {
   const { isDarkMode } = useTheme();
@@ -14,6 +16,16 @@ const TourPage = () => {
       exit={{ opacity: 0 }}
       className="min-h-screen pt-24 pb-12 px-4"
     >
+      <SEOHead
+        title="SUNAME Tour Dates - Upcoming Live Performances & Events"
+        description="Check out SUNAME's upcoming tour dates and live performances. Stay updated on electronic music events, club shows, and festival appearances featuring Tech House, Melodic Techno, and Techno."
+        keywords="SUNAME tour dates, live performances, electronic music events, club shows, festival appearances, concert dates"
+        image="https://sunamemusic.com/images/artist_main.jpg"
+        url="https://sunamemusic.com/tour"
+        type="website"
+        structuredData={musicEventStructuredData}
+      />
+      
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ y: -20, opacity: 0 }}
@@ -22,12 +34,12 @@ const TourPage = () => {
           className="text-center mb-12"
         >
           <h1 className={`text-4xl md:text-5xl font-bold mb-4 ${
-            isDarkMode ? 'text-white' : 'text-gray-900'
+            isDarkMode ? 'text-white' : 'text-white'
           }`}>
             Tour Dates
           </h1>
           <p className={`text-lg ${
-            isDarkMode ? 'text-gray-300' : 'text-gray-700'
+            isDarkMode ? 'text-white' : 'text-white'
           }`}>
             Join the WAVE movement at upcoming shows
           </p>
@@ -67,10 +79,8 @@ const TourPage = () => {
           transition={{ delay: 0.8 }}
           className="text-center mt-12"
         >
-          <p className={`text-sm font-bold ${
-            isDarkMode ? 'text-white' : 'text-gray-800'
-          }`}>
-            Artwork & Website by{' '}
+          <p className="text-sm font-bold text-purple-500 dark:text-white">
+            <span className="text-white dark:text-white">Artwork & Website by</span>{' '}
             <a
               href={biography.designer.twitter}
               target="_blank"

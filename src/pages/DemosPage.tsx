@@ -4,6 +4,8 @@ import { ExternalLink, Music, Upload, Check } from 'lucide-react';
 import { biography } from '../data/biography';
 import { useTheme } from '../context/ThemeContext';
 import AudioVisualizer from '../components/AudioVisualizer';
+import SEOHead from '../components/SEOHead';
+import { artistStructuredData } from '../data/structuredData';
 
 const DemosPage = () => {
   const { isDarkMode } = useTheme();
@@ -36,6 +38,16 @@ const DemosPage = () => {
       exit={{ opacity: 0 }}
       className="min-h-screen pt-24 pb-12 px-4"
     >
+      <SEOHead
+        title="Submit Your Demo to SUNAME - Electronic Music Demo Submissions"
+        description="Submit your electronic music demos to SUNAME. Send your Tech House, Melodic Techno, and Techno tracks for review. Guidelines and submission requirements included."
+        keywords="submit demo to SUNAME, electronic music demo submission, tech house demos, melodic techno submissions, techno demo review"
+        image="https://sunamemusic.com/images/artist_main.jpg"
+        url="https://sunamemusic.com/demos"
+        type="website"
+        structuredData={artistStructuredData}
+      />
+      
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ y: -20, opacity: 0 }}
@@ -43,12 +55,12 @@ const DemosPage = () => {
           transition={{ delay: 0.2 }}
         >
           <h1 className={`text-4xl md:text-5xl font-bold mb-4 ${
-            isDarkMode ? 'text-white' : 'text-gray-900'
+            isDarkMode ? 'text-white' : 'text-white'
           }`}>
             Submit Your Demo
           </h1>
           <p className={`text-lg mb-8 ${
-            isDarkMode ? 'text-gray-300' : 'text-gray-700'
+            isDarkMode ? 'text-gray-300' : 'text-white'
           }`}>
             Ready to share your music with SUNAME?
           </p>
@@ -193,8 +205,8 @@ const DemosPage = () => {
           transition={{ delay: 0.8 }}
           className="text-center mt-12"
         >
-          <p className="text-sm font-bold text-white">
-            Artwork & Website by{' '}
+          <p className="text-sm font-bold text-purple-500 dark:text-white">
+            <span className="text-white dark:text-white">Artwork & Website by</span>{' '}
             <a
               href={biography.designer.twitter}
               target="_blank"

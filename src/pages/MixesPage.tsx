@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { useTheme } from '../context/ThemeContext';
 import AudioVisualizer from '../components/AudioVisualizer';
 import VinylRecord from '../components/VinylRecord';
+import SEOHead from '../components/SEOHead';
+import { artistStructuredData } from '../data/structuredData';
 
 const biography = {
   mixes: [
@@ -80,6 +82,16 @@ const MixesPage = () => {
       exit={{ opacity: 0 }}
       className="min-h-screen pt-24 pb-12 px-4"
     >
+      <SEOHead
+        title="SUNAME Live Mixes - DJ Sets & Electronic Music Mixes"
+        description="Listen to SUNAME's live DJ mixes and electronic music sets. Experience Tech House, Melodic Techno, and Techno mixes recorded at venues like Elixr Orlando and studio sessions."
+        keywords="SUNAME live mixes, DJ sets, electronic music mixes, tech house mixes, melodic techno sets, techno mixes, Elixr Orlando"
+        image="https://sunamemusic.com/images/artist_main.jpg"
+        url="https://sunamemusic.com/mixes"
+        type="music.album"
+        structuredData={artistStructuredData}
+      />
+      
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ y: -20, opacity: 0 }}
@@ -87,15 +99,11 @@ const MixesPage = () => {
           transition={{ delay: 0.2 }}
           className="text-center mb-12"
         >
-          <h1 className={`text-4xl md:text-5xl font-bold mb-4 ${
-            isDarkMode ? 'text-white' : 'text-gray-900'
-          }`}>
-            Live Mixes
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-purple-500 dark:text-white">
+            <span className="text-white dark:text-white">Live Mixes</span>
           </h1>
-          <p className={`text-lg ${
-            isDarkMode ? 'text-gray-300' : 'text-gray-700'
-          }`}>
-            Experience the journey through sound
+          <p className="text-lg text-purple-500 dark:text-white">
+            <span className="text-white dark:text-white">Experience the journey through sound</span>
           </p>
         </motion.div>
 
@@ -246,10 +254,8 @@ const MixesPage = () => {
           transition={{ delay: 0.6 }}
           className="text-center mt-12"
         >
-          <p className={`text-sm font-bold ${
-            isDarkMode ? 'text-white' : 'text-gray-800'
-          }`}>
-            Artwork & Website by{' '}
+          <p className="text-sm font-bold text-purple-500 dark:text-white">
+            <span className="text-white dark:text-white">Artwork & Website by</span>{' '}
             <a
               href={biography.designer.twitter}
               target="_blank"

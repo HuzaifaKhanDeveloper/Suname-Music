@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, HTMLMotionProps } from 'framer-motion';
 import { useTheme } from '../context/ThemeContext';
 import { biography } from '../data/biography';
+import SEOHead from '../components/SEOHead';
+import { artistStructuredData } from '../data/structuredData';
 import {
   MoreHorizontal,
   Headphones,
@@ -224,6 +226,16 @@ const MusicPage: React.FC = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="min-h-screen pt-24 pb-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
     >
+      <SEOHead
+        title="SUNAME Music - Latest Tracks & Releases"
+        description="Listen to SUNAME's latest electronic music tracks, live sets, and releases. Featuring Tech House, Melodic Techno, and Techno productions available on SoundCloud, Spotify, and Apple Music."
+        keywords="SUNAME music, electronic tracks, tech house music, melodic techno, techno releases, SoundCloud, Spotify, Apple Music"
+        image="https://sunamemusic.com/images/artist_main.jpg"
+        url="https://sunamemusic.com/music"
+        type="music.album"
+        structuredData={artistStructuredData}
+      />
+      
       <AnimatePresence>
         {showCopyMessage && (
           <motion.div
@@ -565,10 +577,8 @@ const MusicPage: React.FC = () => {
           transition={{ delay: 0.8 }}
           className="text-center mt-12"
         >
-          <p className={`text-sm font-bold ${
-            isDarkMode ? 'text-white' : 'text-gray-800'
-          }`}>
-            Artwork & Website by{' '}
+          <p className="text-sm font-bold text-purple-500 dark:text-white">
+            <span className="text-white dark:text-white">Artwork & Website by</span>{' '}
             <a
               href={biography.designer.twitter}
               target="_blank"

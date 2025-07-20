@@ -81,7 +81,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkRealm }) => {
               </motion.h1>
               <motion.p
                 className={`text-xs ${
-                  isDarkRealm ? 'text-gray-300' : 'text-gray-600'
+                  isDarkRealm ? 'text-white' : 'text-black'
                 }`}
               >
                 GLOBAL ENTERTAINMENT & PRODUCTION LLC
@@ -121,6 +121,8 @@ const Header: React.FC<HeaderProps> = ({ isDarkRealm }) => {
                           : isActive ? 'text-primary-600' : 'text-gray-700 hover:text-black'
                       }`}
                       whileHover={{ y: -2 }}
+                      role="menuitem"
+                      aria-current={isActive ? 'page' : undefined}
                     >
                       {item.title}
                     </motion.span>

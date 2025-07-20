@@ -4,6 +4,8 @@ import { Mic, Play, ExternalLink } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import AudioVisualizer from '../components/AudioVisualizer';
 import { biography } from '../data/biography';
+import SEOHead from '../components/SEOHead';
+import { artistStructuredData } from '../data/structuredData';
 
 const interviews = [
   {
@@ -39,6 +41,16 @@ const InterviewsPage = () => {
       exit={{ opacity: 0 }}
       className="min-h-screen pt-24 pb-12 px-4"
     >
+      <SEOHead
+        title="SUNAME Interviews & Media Features - Electronic Music Artist Press"
+        description="Read and watch SUNAME's latest interviews and media features. Get insights into the electronic music artist's journey, production process, and the SUNAME WAVE movement."
+        keywords="SUNAME interviews, electronic music artist interviews, DJ interviews, music producer interviews, SUNAME media features"
+        image="https://sunamemusic.com/images/artist_main.jpg"
+        url="https://sunamemusic.com/interviews"
+        type="website"
+        structuredData={artistStructuredData}
+      />
+      
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ y: -20, opacity: 0 }}
@@ -47,12 +59,12 @@ const InterviewsPage = () => {
           className="text-center mb-12"
         >
           <h1 className={`text-4xl md:text-5xl font-bold mb-4 ${
-            isDarkMode ? 'text-white' : 'text-gray-900'
+            isDarkMode ? 'text-white' : 'text-white'
           }`}>
             Interviews & Media
           </h1>
           <p className={`text-lg ${
-            isDarkMode ? 'text-gray-300' : 'text-gray-700'
+            isDarkMode ? 'text-white' : 'text-white'
           }`}>
             Get to know SUNAME through exclusive interviews and features
           </p>
@@ -164,10 +176,8 @@ const InterviewsPage = () => {
           transition={{ delay: 0.8 }}
           className="text-center mt-12"
         >
-          <p className={`text-sm font-bold ${
-            isDarkMode ? 'text-white' : 'text-gray-800'
-          }`}>
-            Artwork & Website by{' '}
+          <p className="text-sm font-bold text-purple-500 dark:text-white">
+            <span className="text-white dark:text-white">Artwork & Website by</span>{' '}
             <a
               href={biography.designer.twitter}
               target="_blank"

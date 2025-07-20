@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { Waves } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { biography } from '../data/biography';
+import SEOHead from '../components/SEOHead';
+import { musicEventStructuredData } from '../data/structuredData';
 
 const WaveEventsPage = () => {
   const { isDarkMode } = useTheme();
@@ -14,6 +16,16 @@ const WaveEventsPage = () => {
       exit={{ opacity: 0 }}
       className="min-h-screen pt-24 pb-12 px-4"
     >
+      <SEOHead
+        title="SUNAME WAVE Events - Electronic Music Movement & Experiences"
+        description="Join the SUNAME WAVE movement. Discover upcoming electronic music events and experiences. We are not ravers, we are WAVERS - bringing light into dark places through music."
+        keywords="SUNAME WAVE events, electronic music movement, WAVE experiences, electronic music events, SUNAME movement, wavers not ravers"
+        image="https://sunamemusic.com/images/artist_main.jpg"
+        url="https://sunamemusic.com/wave-events"
+        type="website"
+        structuredData={musicEventStructuredData}
+      />
+      
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ y: -20, opacity: 0 }}
@@ -22,12 +34,12 @@ const WaveEventsPage = () => {
           className="text-center mb-12"
         >
           <h1 className={`text-4xl md:text-5xl font-bold mb-4 ${
-            isDarkMode ? 'text-white' : 'text-gray-900'
+            isDarkMode ? 'text-white' : 'text-white'
           }`}>
             WAVE Events
           </h1>
           <p className={`text-lg ${
-            isDarkMode ? 'text-gray-300' : 'text-gray-700'
+            isDarkMode ? 'text-white' : 'text-white'
           }`}>
             Join the movement. We are not ravers, we are WAVERS.
           </p>
@@ -67,10 +79,8 @@ const WaveEventsPage = () => {
           transition={{ delay: 0.8 }}
           className="text-center mt-12"
         >
-          <p className={`text-sm font-bold ${
-            isDarkMode ? 'text-white' : 'text-gray-800'
-          }`}>
-            Artwork & Website by{' '}
+          <p className="text-sm font-bold text-purple-500 dark:text-white">
+            <span className="text-white dark:text-white">Artwork & Website by</span>{' '}
             <a
               href={biography.designer.twitter}
               target="_blank"
