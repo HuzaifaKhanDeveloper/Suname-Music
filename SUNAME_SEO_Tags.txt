@@ -1,0 +1,126 @@
+# SUNAME MUSIC WEBSITE - SEO OPTIMIZATION TAGS
+# For implementation in <head> section of https://sunamemusic.com/
+
+## PRIMARY SEO TAGS
+
+### Title Tag (59 characters)
+<title>SUNAME | Official Music, Albums & Latest Electronic Songs</title>
+
+### Meta Description (158 characters)
+<meta name="description" content="Official SUNAME music website. Stream latest electronic tracks, albums & live mixes. Tech House, Melodic Techno & Techno from Florida's rising DJ.">
+
+### Meta Keywords
+<meta name="keywords" content="SUNAME, SUNAME music, SUNAME songs, SUNAME albums, SUNAME artist, SUNAME official, SUNAME streaming, SUNAME latest release, electronic music SUNAME, SUNAME DJ, SUNAME tech house, SUNAME melodic techno">
+
+## FOCUS KEYWORDS (Primary - 8 keywords)
+1. SUNAME
+2. SUNAME Music
+3. SUNAME Songs
+4. SUNAME Artist
+5. SUNAME Albums
+6. SUNAME Official
+7. SUNAME Streaming
+8. SUNAME Latest Release
+
+## LONG-TAIL KEYWORDS (20 keywords)
+1. SUNAME new album 2025
+2. stream SUNAME songs free
+3. SUNAME official website music
+4. SUNAME electronic music artist
+5. SUNAME tech house tracks
+6. SUNAME melodic techno songs
+7. listen to SUNAME music online
+8. SUNAME DJ live mixes
+9. SUNAME Florida electronic artist
+10. SUNAME WAVE movement music
+11. download SUNAME songs
+12. SUNAME SoundCloud tracks
+13. SUNAME Spotify artist
+14. SUNAME Apple Music streaming
+15. SUNAME latest electronic release
+16. SUNAME official music videos
+17. SUNAME tour dates 2025
+18. SUNAME booking information
+19. SUNAME press kit download
+20. SUNAME electronic dance music
+
+## SEO-FRIENDLY PAGE URLS
+/music - SUNAME Music & Latest Tracks
+/albums - SUNAME Albums & Releases
+/mixes - SUNAME Live DJ Mixes
+/tour - SUNAME Tour Dates & Events
+/latest-release - SUNAME Latest Music Release
+/streaming - Stream SUNAME Music Online
+/contact - Contact SUNAME Official
+/press-kit - SUNAME Press Kit & Media
+/bookings - Book SUNAME DJ Services
+/wave-events - SUNAME WAVE Movement Events
+
+## OPEN GRAPH (OG) META TAGS
+<meta property="og:title" content="SUNAME | Official Electronic Music Artist & DJ">
+<meta property="og:description" content="Stream SUNAME's latest electronic music, tech house & melodic techno tracks. Official website for Florida's rising electronic music artist.">
+<meta property="og:image" content="https://sunamemusic.com/images/suname-og-image.jpg">
+<meta property="og:image:alt" content="SUNAME - Electronic Music Artist and DJ Official Photo">
+<meta property="og:url" content="https://sunamemusic.com/">
+<meta property="og:type" content="music.musician">
+<meta property="og:site_name" content="SUNAME Music">
+<meta property="og:locale" content="en_US">
+<meta property="music:musician" content="https://sunamemusic.com">
+<meta property="music:genre" content="Electronic">
+<meta property="music:genre" content="Tech House">
+<meta property="music:genre" content="Melodic Techno">
+
+## TWITTER CARD META TAGS
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@sunamemusic">
+<meta name="twitter:creator" content="@sunamemusic">
+<meta name="twitter:title" content="SUNAME | Official Electronic Music Artist & DJ">
+<meta name="twitter:description" content="Stream SUNAME's latest electronic music, tech house & melodic techno tracks. Official website for Florida's rising electronic music artist.">
+<meta name="twitter:image" content="https://sunamemusic.com/images/suname-twitter-card.jpg">
+<meta name="twitter:image:alt" content="SUNAME - Electronic Music Artist and DJ Official Photo">
+
+## ADDITIONAL SEO META TAGS
+<meta name="author" content="SUNAME">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
+<link rel="canonical" href="https://sunamemusic.com/">
+<meta name="theme-color" content="#8B5CF6">
+
+## MUSIC-SPECIFIC META TAGS
+<meta name="music-genre" content="Electronic, Tech House, Melodic Techno, Techno">
+<meta name="artist-name" content="SUNAME">
+<meta name="artist-location" content="Florida, USA">
+<meta name="music-label" content="Independent">
+
+## STRUCTURED DATA (JSON-LD) - For <script> tag
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": "SUNAME",
+  "url": "https://sunamemusic.com",
+  "image": "https://sunamemusic.com/images/artist_main.jpg",
+  "description": "SUNAME is an electronic music artist and DJ specializing in Tech House, Melodic Techno, and Techno from Florida.",
+  "genre": ["Electronic", "Tech House", "Melodic Techno", "Techno"],
+  "sameAs": [
+    "https://soundcloud.com/sunamemusic",
+    "https://www.instagram.com/sunamemusic/",
+    "https://open.spotify.com/artist/1iSs6VT8Pi1pQ85ffnrLlZ",
+    "https://music.apple.com/us/artist/suname/1755948288"
+  ]
+}
+
+## IMPLEMENTATION NOTES
+- Replace existing title and meta description tags
+- Add all OG and Twitter tags to <head> section
+- Implement structured data in <script type="application/ld+json"> tag
+- Ensure canonical URL matches actual page URL
+- Update og:image and twitter:image with high-quality 1200x630px images
+- Test with Google Rich Results Test and Facebook Sharing Debugger
+- Monitor Google Search Console for indexing and ranking improvements
+
+## PRIORITY IMPLEMENTATION ORDER
+1. Title tag and meta description (immediate impact)
+2. Open Graph and Twitter Card tags (social sharing)
+3. Structured data (rich snippets)
+4. Additional meta tags (comprehensive optimization)
+5. Monitor and adjust based on search performance data
