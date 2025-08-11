@@ -3,14 +3,14 @@
 
 export const imageAltTexts = {
   // Artist Photos
-  artistMain: "SUNAME - Electronic music artist and DJ performing live, wearing headphones in professional studio setting",
-  artistBeachball: "SUNAME artist portrait with beachball, showcasing the vibrant Florida electronic music scene aesthetic",
-  artistOrange: "SUNAME full body portrait in orange lighting, representing the energetic WAVE movement brand",
+  artistMain: "SUNAME - Official electronic music artist and DJ from Florida performing live with professional equipment",
+  artistBeachball: "SUNAME artist portrait - Florida electronic music DJ and producer official photo",
+  artistOrange: "SUNAME full body portrait - Electronic music artist specializing in Tech House and Melodic Techno",
   
   // Dark Mode Photos
-  darkPhoto1: "SUNAME in atmospheric dark lighting, embodying the mysterious electronic music realm aesthetic",
-  darkPhoto2: "SUNAME DJ portrait in moody studio environment, capturing the essence of underground techno culture",
-  darkPhoto3: "SUNAME artistic portrait with dramatic shadows, representing the depth of melodic techno music",
+  darkPhoto1: "SUNAME electronic music artist in atmospheric studio lighting - Tech House and Melodic Techno producer",
+  darkPhoto2: "SUNAME DJ portrait in professional studio environment - Florida electronic music artist",
+  darkPhoto3: "SUNAME artistic portrait - Electronic music DJ specializing in Techno and Melodic Techno",
   
   // Logos and Branding
   logoLight: "SUNAME official logo in light mode - circular emblem representing the electronic music WAVE movement",

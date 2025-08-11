@@ -3,10 +3,10 @@
 export const siteConfig = {
   siteName: 'SUNAME Music',
   siteUrl: 'https://sunamemusic.com',
-  defaultTitle: 'SUNAME - Electronic Music Artist & DJ | Tech House, Melodic Techno, Techno',
-  defaultDescription: 'Official website of SUNAME - Electronic music artist and DJ from Florida specializing in Tech House, Melodic Techno, and Techno. Experience the SUNAME WAVE movement.',
+  defaultTitle: 'SUNAME | Official Music, Albums & Latest Electronic Songs',
+  defaultDescription: 'Official SUNAME music website. Stream latest electronic tracks, albums & live mixes. Tech House, Melodic Techno & Techno from Florida\'s rising DJ.',
   defaultImage: 'https://sunamemusic.com/images/artist_main.jpg',
-  defaultKeywords: 'SUNAME, electronic music, DJ, tech house, melodic techno, techno, Florida DJ, electronic dance music, EDM, live sets, music producer',
+  defaultKeywords: 'SUNAME, SUNAME music, SUNAME songs, SUNAME albums, SUNAME artist, SUNAME official, SUNAME streaming, SUNAME latest release, electronic music SUNAME, SUNAME DJ, SUNAME tech house, SUNAME melodic techno',
   twitterHandle: '@sunamemusic',
   instagramHandle: '@sunamemusic',
   facebookPage: '',
@@ -23,15 +23,15 @@ export const siteConfig = {
 
 export const pageConfigs = {
   home: {
-    title: 'SUNAME - Electronic Music Artist & DJ | Tech House, Melodic Techno, Techno',
-    description: 'Official website of SUNAME - Electronic music artist and DJ from Florida specializing in Tech House, Melodic Techno, and Techno. Experience the SUNAME WAVE movement.',
-    keywords: 'SUNAME, electronic music, DJ, tech house, melodic techno, techno, Florida DJ, electronic dance music, EDM, live sets, music producer, SUNAME WAVE',
+    title: 'SUNAME | Official Music, Albums & Latest Electronic Songs',
+    description: 'Official SUNAME music website. Stream latest electronic tracks, albums & live mixes. Tech House, Melodic Techno & Techno from Florida\'s rising DJ.',
+    keywords: 'SUNAME, SUNAME music, SUNAME songs, SUNAME albums, SUNAME artist, SUNAME official, SUNAME streaming, SUNAME latest release, electronic music SUNAME, SUNAME DJ, SUNAME tech house, SUNAME melodic techno',
     type: 'profile',
   },
   music: {
-    title: 'SUNAME Music - Latest Tracks & Releases',
-    description: 'Listen to SUNAME\'s latest electronic music tracks, live sets, and releases. Featuring Tech House, Melodic Techno, and Techno productions available on SoundCloud, Spotify, and Apple Music.',
-    keywords: 'SUNAME music, electronic tracks, tech house music, melodic techno, techno releases, SoundCloud, Spotify, Apple Music',
+    title: 'SUNAME Music - Latest Tracks & Electronic Albums',
+    description: 'Stream SUNAME\'s latest electronic music tracks and albums. Tech House, Melodic Techno & Techno releases available on Spotify, Apple Music & SoundCloud.',
+    keywords: 'SUNAME music, SUNAME songs, SUNAME albums, SUNAME tracks, electronic music SUNAME, SUNAME streaming, SUNAME latest release',
     type: 'music.album',
   },
   mixes: {

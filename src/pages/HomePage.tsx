@@ -291,9 +291,9 @@ const HomePage: React.FC<HomePageProps> = React.memo(({ isDarkRealm }) => {
       exit="exit"
     >
       <SEOHead
-        title="SUNAME - Electronic Music Artist & DJ | Tech House, Melodic Techno, Techno"
-        description="Official website of SUNAME - Electronic music artist and DJ from Florida specializing in Tech House, Melodic Techno, and Techno. Experience the SUNAME WAVE movement."
-        keywords="SUNAME, electronic music, DJ, tech house, melodic techno, techno, Florida DJ, electronic dance music, EDM, live sets, music producer, SUNAME WAVE"
+        title="SUNAME | Official Music, Albums & Latest Electronic Songs"
+        description="Official SUNAME music website. Stream latest electronic tracks, albums & live mixes. Tech House, Melodic Techno & Techno from Florida's rising DJ."
+        keywords="SUNAME, SUNAME music, SUNAME songs, SUNAME albums, SUNAME artist, SUNAME official, SUNAME streaming, SUNAME latest release, electronic music SUNAME, SUNAME DJ, SUNAME tech house, SUNAME melodic techno"
         image="https://sunamemusic.com/images/artist_main.jpg"
         url="https://sunamemusic.com/"
         type="profile"

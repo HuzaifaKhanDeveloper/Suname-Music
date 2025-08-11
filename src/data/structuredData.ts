@@ -3,7 +3,7 @@ export const artistStructuredData = {
   "@type": "MusicGroup",
   "name": "SUNAME",
   "alternateName": "Isaiah Loreihe",
-  "description": "SUNAME is an electronic music artist and DJ specializing in Tech House, Melodic Techno, and Techno. Known for the SUNAME WAVE movement - bringing light into dark places through electronic dance music.",
+  "description": "SUNAME is an electronic music artist and DJ from Florida specializing in Tech House, Melodic Techno, and Techno. Stream latest electronic tracks, albums & live mixes.",
   "genre": ["Electronic", "Tech House", "Melodic Techno", "Techno", "Electronic Dance Music"],
   "foundingLocation": {
     "@type": "Place",
@@ -27,6 +27,15 @@ export const artistStructuredData = {
     "https://music.apple.com/us/artist/suname/1755948288",
     "https://www.youtube.com/@sunamemusic"
   ],
+  "mainEntityOfPage": "https://sunamemusic.com",
+  "potentialAction": {
+    "@type": "ListenAction",
+    "target": [
+      "https://open.spotify.com/artist/1iSs6VT8Pi1pQ85ffnrLlZ",
+      "https://music.apple.com/us/artist/suname/1755948288",
+      "https://soundcloud.com/sunamemusic"
+    ]
+  },
   "member": {
     "@type": "Person",
     "name": "Isaiah Loreihe",
